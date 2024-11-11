@@ -1,0 +1,94 @@
+/* About Page Container */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* About Heading */
+  .about-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* About Description */
+  .about-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 40px;
+  }
+  
+  /* Projects Heading */
+  .projects-heading {
+    font-size: 28px;
+    color: #ff7e5f;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Individual Project */
+  .project {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px); /* Hover effect */
+  }
+  
+  /* Project Title */
+  .project-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Project Description */
+  .project p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .contact-info a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  

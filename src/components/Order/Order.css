@@ -1,0 +1,73 @@
+/* Order.css */
+
+/* General container styling */
+.order-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header styling */
+  .order-container h2 {
+    font-size: 32px;
+    color: #4CAF50; /* Green color for the header */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Description text */
+  .order-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Button styling */
+  .confirm-order-btn {
+    padding: 15px 30px;
+    background-color: #4CAF50; /* Green color for the button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .confirm-order-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .confirm-order-btn:active {
+    background-color: #388e3c; /* Even darker green on click */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .order-container {
+      padding: 20px;
+    }
+  
+    .order-container h2 {
+      font-size: 28px;
+    }
+  
+    .order-container p {
+      font-size: 14px;
+    }
+  
+    .confirm-order-btn {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+    }
+  }
+  

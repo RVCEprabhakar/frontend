@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
+import Product from './components/Product/Product';
+import Login from './components/Login/Login';
+import Cart from './components/Cart/Cart';
+import Order from './components/Order/Order';
+import BillPayment from './components/BillPayment/BillPayment';
+import Cetegary from './components/Cetegary/Cetegary';
+import OrderHistory from './components/OrderHistory/OrderHistory';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact'; // Import Contact component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/bill-payment" element={<BillPayment />} />
+        <Route path="/cetegary/:category" element={<Cetegary />} />
+        <Route path="/order-history" element={<OrderHistory />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} /> {/* Add route for Contact */}
+      </Routes>
+    </Router>
   );
 }
 
