@@ -37,7 +37,7 @@
   }
   
   .navbar-links a:hover {
-    background-color: #ddd; /* Change background color on hover */
+    background-color: whitesmoke; /* Change background color on hover */
     color: black; /* Change text color on hover */
   }
   

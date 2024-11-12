@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
@@ -12,6 +11,7 @@ import Cetegary from './components/Cetegary/Cetegary';
 import OrderHistory from './components/OrderHistory/OrderHistory';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact'; // Import Contact component
+import ChatBox from './components/ChatBox/ChatBox'; // Import ChatBox component
 
 function App() {
   return (
@@ -27,8 +27,9 @@ function App() {
         <Route path="/cetegary/:category" element={<Cetegary />} />
         <Route path="/order-history" element={<OrderHistory />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> {/* Add route for Contact */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ChatBox /> {/* Always visible chatbox */}
     </Router>
   );
 }
